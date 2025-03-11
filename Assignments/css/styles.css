@@ -41,12 +41,12 @@ body {
 .button:link, .button:visited {
     color: white;
     background-color: dodgerblue;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     padding: 1rem 1.75rem;
     border-radius: .5rem;
     box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
-    display: inline-block;
     margin: 0 .25rem .25rem 0;
     transition: background-color 0.5s ease;
 }
@@ -60,6 +60,42 @@ header {
     background-color: dodgerblue;
     color: #fff;
     padding: 30px 40px;
+}
+
+/****** Navigation Using Flexbox ******/
+nav {
+    background-color: #525252;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover {
+    background-color: dodgerblue;
+    color: white;
 }
 
 h1 {
@@ -104,7 +140,7 @@ a:hover {
 
 /****** Navigation ******/
 #nav-menu li a {
-    color: blue;
+    color: white;
 }
 
 .menu-items li a {
