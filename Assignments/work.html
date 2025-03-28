@@ -3,44 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignments - Slade Reese</title>
-   <link rel="stylesheet" href="css\styles.css">
-   <script src="https://kit.fontawesome.com/a6703f9a3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 
-<div class= "container"> 
+  <div class="container">
 
     <header>
-    <h1>Work</h1>
+      <h1>Work</h1>
     </header>
-    
+
     <nav id="nav-menu">
-        <ul class="menu-items">
-            <li><a href="index.html">About</a></li>
-            <li class="active"><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul id="nav-menu-list" class="menu-items">
+        <li><a href="index.html">About</a></li>
+        <li class="active"><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="toggle-button" type="button">Menu</button>
     </nav>
 
-    <section class="col-span-4">
-        <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
-       <h3>Project 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.</p>
-    </section>
 
-    <section class="col-span-4">
-        <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
-       <h3>Project 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.</p>
-    </section>
+    <h2>Recent Projects</h2>
+    <!-- Card section -->
+    <section class="work-section">
+      <div class="card">
+        <img src="images/Strategic Plan FINAL.jpg" alt="Photo of Strategic Plan">
+        <h3 class="card-title">Strategic Plan</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam au nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+        <a class="button" href="https://www.linkedin.com/in/sladereese" target="_blank">Learn More</a>
+      </div>
 
-    <section class="col-span-4">
-        <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
-       <h3>Project 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.</p>
+      <div class="card">
+        <img src="images/Poster Design Final.jpg" alt="Photo of Poster Design">
+        <h3 class="card-title">Poster Design</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam aut
+          nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+          <a class="button" href="https://www.linkedin.com/in/sladereese" target="_blank">Learn More</a>
+      </div>
+
+      <div class="card">
+        <img src="images/wireframing Final.jpg" alt="Photo of Wireframing">
+        <h3 class="card-title">Wireframing</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam aut
+          nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+          <a class="button" href="https://www.linkedin.com/in/sladereese" target="_blank">Learn More</a>
+      </div>
+
     </section>
+    <!-- End Card section -->
+
+
 
   
+    <section class="col-span-4">
+      <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam aut nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+    </section>
+
+    <section class="col-span-4">
+      <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam aut nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+    </section>
+
+    <section class="col-span-4">
+      <img class="circle" src="images/picture of slade reese.png" alt="Photo of Slade Reese">
+      <h3>Project 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis porro, velit error placeat aperiam ullam aut nihil ut doloribus quibusdam veritatis laudantium explicabo iure atque, modi qui totam fuga sunt!</p>
+    </section>
 
     <footer>
         <ul>
@@ -51,8 +83,9 @@
     
         <p>&copy; 2025 Slade Reese</p>
     </footer>
+    
+  </div>
 
-</div>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

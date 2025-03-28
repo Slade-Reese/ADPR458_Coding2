@@ -1,152 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px 10%;
-    background-image: url("../images/interlaced\ background.png");
-}
-
-/****** Layout ******/
-
-.container {
-    background-color: white;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr);
-    width: min(95%, 75em);
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container > * {
-    grid-column: span 12;
-}
-
-/* Desktop Layout */
-@media screen and (min-width: 40em) {
-    .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-4 {
-        grid-column: span 4;
-    }
-}
-
-/****** Components ******/
-.button:link, .button:visited {
-    color: white;
-    background-color: dodgerblue;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    padding: 1rem 1.75rem;
-    border-radius: .5rem;
-    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
-    margin: 0 .25rem .25rem 0;
-    transition: background-color 0.5s ease;
-}
-
-.button:hover {
-    background-color: purple;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble.png');
+  background-repeat: repeat;
+  background-size: 100px;
 }
 
 header {
-    text-align: left;
-    background-color: dodgerblue;
-    color: #fff;
-    padding: 30px 40px;
-}
-
-/****** Navigation Using Flexbox ******/
-nav {
-    background-color: #525252;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-nav li {
-    margin: 0 0.5rem;
-}
-
-nav a:link, nav a:visited {
-    color: white;
-    text-decoration: none;
-    font-size: 1.125rem;
-    padding: 1rem;
-    display: block;
-    transition: ease-in-out 250ms;
-}
-
-nav a:hover {
-    background-color: dodgerblue;
-    color: white;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: clamp(32px, 4vw, 48px);
-}
-
-h2 {
-    font-size: 36px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-aside {
-    text-align: center;
-}
-
-img {
-    width: 100%;
-}
-
-img.circle {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 999px;
-    border: 6px solid dodgerblue;
-}
-
-a:link, a:visited {
-    color: dodgerblue;
-    text-decoration: none;
-}
-
-a:hover {
-    color: purple; 
-    text-decoration: underline;
-
-}
-
-
-/****** Navigation ******/
-#nav-menu li a {
-    color: white;
-}
-
-.menu-items li a {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
+  text-align: left;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 30px 40px;
 }
 
 footer {
@@ -173,3 +45,184 @@ footer ul a:hover{
     color:#333
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+aside {
+  text-align: center;
+  padding-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+img.circle {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 6px solid dodgerblue;
+}
+
+/****** Navigation ******/
+#nav-menu {
+  background-color: #444;
+  padding: 12px 1rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+#nav-menu ul {
+  display: none; /* hide on mobile by default */
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu ul.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-menu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li a {
+  display: inline-block;
+  color: #fff;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 99px;
+  transition: all 0.2s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+#nav-menu li.active a,
+#nav-menu li a:hover {
+  background-color: #555;
+}
+
+#toggle-button {
+  margin-left: auto;
+}
+
+#nav-menu ul.active + #toggle-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+/****** Layout ******/
+
+.container {
+  display: grid;
+  column-gap: 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+  width: min(95%, 75em);
+  margin: 0 auto;
+  
+  background-color: #fff;
+  box-shadow: 0 0 36px -12px rgba(25, 88, 151, 0.35);
+  
+}
+
+.container > * {
+  grid-column: span 12;
+  padding-inline: 20px;
+}
+
+/* Button styles */
+
+a.button {
+  display: block;
+  min-width: 200px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  
+  /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+}
+
+a.button:hover {
+  transform: translateY(-2px);
+  background-color: rgb(100, 180, 250);
+  box-shadow: 0px 10px 28px -10px rgba(0, 0, 0, 0.56);
+}
+
+a.button:active {
+  background-color: rgb(10, 110, 210);
+}
+
+a.button:visited {
+
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  text-align: center;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: 0 2rem;
+}
+
+/* Desktop Layout */
+
+@media (min-width: 40em) {
+  #nav-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #toggle-button {
+    display: none;
+  }  
+  a.button {
+    display: inline-block;
+  }
+  .col-span-8 {
+    grid-column: span 8;
+  }
+  .col-span-4 {
+    grid-column: span 4;
+  }
+
+  .work-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    flex: 0 1 324px;
+  }
+}
