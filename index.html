@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Home - Slade Reese</title>
+   <link rel="stylesheet" href="css\styles.css">
+   <script src="https://kit.fontawesome.com/a6703f9a3e.js" crossorigin="anonymous"></script>
+   <meta name="viewpoint" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <h1>Home - Slade Reese</h1>
-    <p>Advertising and Public Relations</p>
+
+<nav id="nav-menu">
+    <button id="toggle-button" type="button">Menu</button>
+    <ul id="nav-menu-list" class="menu-items">
+        <li class="active"><a href="index.html">Slade Reese</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2><span id="hello">Hello</span></h2>
+      <h3>I'm Slade Reese</h3>
+    </div>
+    <div class="hero-image">
+      <img src="images/slade no bg headshot.png" alt="Headshot of Slade Reese">
+    </div>
+  </div>
+</section>
+
+<div class= "container"> 
+
+    <section class="col-span-6">
+    <h2>Who am I?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit sint provident laboriosam facere accusamus aut voluptate eius corporis neque ipsam ducimus animi iste voluptatem reiciendis minus, nulla cumque tempora.</p>
+     </section>
+
+     <section class="gallery">
+        <div class="frame">
+          <div class="artwork">
+            <a href="work.html">
+              <aside class="col-span-4"> 
+              <img src="images/DailyER/Husker Horoscope Cover.jpg" alt="Artwork 1">
+            </a>
+          </div>
+          <img src="images/frame 1.png" class="frame-img" alt="Frame" />
+        </div>
+
+        <section class="gallery">
+            <div class="frame">
+              <div class="artwork">
+                <a href="work.html">
+                  <aside class="col-span-4"> 
+                  <img src="images/DailyER/Husker Horoscope Cover.jpg" alt="Artwork 1">
+                </a>
+              </div>
+              <img src="images/frame 1.png" class="frame-img" alt="Frame" />
+            </div>
+
+            <section class="gallery">
+                <div class="frame">
+                  <div class="artwork">
+                    <aside class="col-span-4"> 
+                    <a href="work.html">
+                      <img src="images/DailyER/Husker Horoscope Cover.jpg" alt="Artwork 1">
+                    </a>
+                  </div>
+                  <img src="images/frame 1.png" class="frame-img" alt="Frame" />
+                </div>
+      </section>
+
+</div>
+<img src="images/corn field 5.png" alt="Full width bottom image" class="bottom-image" />
+
+
+
+<script>
+    const hellos = [
+    'Hello',         // English
+    'Howdy',         // Texan
+    'Hola',          // Spanish
+    'Bonjour',       // French
+    'مرحبا',        // Arabic
+    'สวัสดี',         // Thai   
+    'Ahoj',         // Czech
+    'Ciao',         // Italian
+    '你好',         // Chinese (Mandarin)
+    'こんにちは',   // Japanese  
+    'Hallo',       // German
+    'Hej',         // Swedish
+    'Привет',      // Russian
+    'Olá',         // Portuguese
+    '안녕하세요',   // Korean
+    'Halo',        // Indonesian
+    ];
+  
+    const helloEl = document.getElementById('hello');
+    let index = 0;
+  
+    // First one stays for 2s, rest change every 1s
+    setTimeout(() => {
+      setInterval(() => {
+        index = (index + 1) % hellos.length;
+        helloEl.textContent = hellos[index];
+      }, 1000);
+    }, 2000);
+  </script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
