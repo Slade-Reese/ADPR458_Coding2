@@ -20,9 +20,10 @@ body {
   justify-content: center;
   height: 100vh;
   background: #111;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Raleway', sans-serif;
   padding: 2rem;
+  /** border: 5px dotted green; **/
 }
 
 .hero-content {
@@ -34,38 +35,50 @@ body {
   height: 100%;          
   align-items: center;
   flex-wrap: wrap;
+  /** border: 5px dotted green; **/
 }
 
 .hero-text {
   flex: 1;
   padding-right: 2rem;
+  /** border: 5px dotted green; **/
 }
 
 .hero-text h2 {
   font-size: 6rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 0.2rem;
+  /** border: 5px dotted orange; **/
 }
 
 .hero-text h3 {
   font-size: 4rem;
   font-weight: 700;
-  color: white;
+  color: rgb(0, 0, 0);
+  /** border: 5px dotted teal; **/
 }
 
 .hero-image {
   flex: 1;
   text-align: center;
+  /** border: 5px dotted maroon; **/
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
+  /** border: 5px dotted green; **/
+}
+
+.headshot {
+  max-width: 1000px;
+  max-height: auto;
 }
 
 h1 {
   text-transform: uppercase;
   font-size: clamp(32px, 4vw, 48px);
+  /** border: 5px dotted green; **/
 }
 
 h2 {
@@ -92,23 +105,26 @@ img.circle {
   border: 6px solid dodgerblue;
 }
 
+
 /****** Navigation ******/
 #nav-menu {
-  background-color: #444;
+  background-color: #000000;
   padding: 12px 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
+  /** border: 5px dotted red; **/
 }
 
 #nav-menu ul {
-  display: none; /* hide on mobile by default */
+  display: none; 
   justify-content: center;
-  gap: 20px;
+  gap: 1100px;
   list-style: none;
   margin: 0;
   padding: 0;
+  /** border: 5px dotted yellow; **/
 }
 
 #nav-menu ul.active {
@@ -127,26 +143,27 @@ img.circle {
   padding: 12px 20px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 99px;
   transition: all 0.2s ease;
-  min-width: 150px;
+  min-width: 180px;
   text-align: center;
+  /** border: 5px dotted orange; **/
 }
 
-#nav-menu li.active a,
 #nav-menu li a:hover {
-  background-color: #555;
+  color: #555;
 }
 
-#toggle-button {
-  margin-left: auto;
+.fast-track {
+  font-size: 20px;
+  text-decoration: none;
+  color:#000000;
 }
 
-#nav-menu ul.active + #toggle-button {
-  position: absolute;
-  top: 12px;
-  right: 16px;
+.fast-track :hover {
+  color:#555;
 }
+
+
 
 /****** Layout ******/
 
@@ -156,13 +173,24 @@ img.circle {
   grid-template-columns: repeat(12, 1fr);
   width: min(95%, 75em);
   margin: 0 auto;
-  
   background-color: #fff;
+  /** border: 5px dotted red; **/
 }
 
 .container > * {
   grid-column: span 12;
   padding-inline: 20px;
+}
+
+.travel-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111;
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem;
 }
 
 /* Button styles */
@@ -193,65 +221,6 @@ a.button:active {
   background-color: rgb(10, 110, 210);
 }
 
-/* Card styles */
-.card {
-  background-color: #fff;
-  text-align: center;
-  margin: 1rem;
-  padding-bottom: 2rem;
-  box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-.card-text {
-  padding: 0 2rem;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 3rem auto;
-  max-width: 1200px;
-  gap: 2rem;
-}
-
-.frame {
-  position: relative;
-  width: 300px;
-  aspect-ratio: 3 / 4;
-}
-
-.frame-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.artwork {
-  position: absolute;
-  top: 20%;    /* adjust to fit inside the frame image */
-  left: 10%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.artwork img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.artwork img:hover {
-  transform: scale(1.05);
-}
-
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -276,11 +245,125 @@ footer ul a:hover{
   color:#333
 }
 
+.experience {
+  font-size: 40px;
+  color: black;
+  margin-top: 35px;
+  margin-left: 660px;
+  margin-bottom: 0;
+}
+
+.my-work {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 660px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 90px;
+  /** border: 5px dotted maroon; **/
+}
+
+.see-more {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1200px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.see-more a :hover {
+  color: #555
+}
+
+.image-wrapper {
+  position: relative;
+  width: 800px; 
+  height: auto;
+  border: 5px purple;
+}
+
 .bottom-image {
   width: 100%;
   height: auto;
   display: block;
 }
+
+.corn-field {
+  position: relative;
+}
+
+.corn-field img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  /** border: 5px dotted blue; **/
+}
+
+.p-email {
+  position: absolute;
+  top: 515px;
+  margin-left: 1000px;
+  padding: 0px;
+  /** border: 5px dotted yellow; **/
+}
+
+.linkedin-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 117px;
+  padding: 0px;
+  /** border: 5px dotted yellow; **/
+}
+
+.email-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 355px;
+  padding: 0px;
+  /** border: 5px dotted red; **/
+}
+
+.instagram-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 515px;
+  padding: 0px;
+  /** border: 5px dotted purple; **/
+}
+
+.copyright {
+position: absolute;
+margin-top: 970px;
+margin-left: 675px;
+color: #fff;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.card {
+  padding: 5px;
+}
+
+.big-card {
+  max-width: 960px;
+}
+
 /* Desktop Layout */
 
 @media (min-width: 40em) {
