@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111;
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem;
+  /** border: 5px dotted green; **/
+}
+
+.hero-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end; 
+  height: 100%;          
+  align-items: center;
+  flex-wrap: wrap;
+  /** border: 5px dotted green; **/
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+  /** border: 5px dotted green; **/
+}
+
+.hero-text h2 {
+  font-size: 6rem;
+  color: #000000;
+  margin-bottom: 0.2rem;
+  /** border: 5px dotted orange; **/
+}
+
+.hero-text h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  /** border: 5px dotted teal; **/
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  /** border: 5px dotted maroon; **/
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  /** border: 5px dotted green; **/
+}
+
+.headshot {
+  max-width: 1000px;
+  max-height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: clamp(32px, 4vw, 48px);
+  /** border: 5px dotted green; **/
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+aside {
+  text-align: center;
+  padding-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+img.circle {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 6px solid dodgerblue;
+}
+
+
+/****** Navigation ******/
+#nav-menu {
+  background-color: #000000;
+  padding: 12px 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  /** border: 5px dotted red; **/
+}
+
+#nav-menu ul {
+  display: none; 
+  justify-content: center;
+  gap: 1100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /** border: 5px dotted yellow; **/
+}
+
+#nav-menu ul.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-menu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li a {
+  display: inline-block;
+  color: #fff;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 180px;
+  text-align: center;
+  /** border: 5px dotted orange; **/
+}
+
+#nav-menu li a:hover {
+  color: #555;
+}
+
+.fast-track {
+  font-size: 20px;
+  text-decoration: none;
+  color:#000000;
+}
+
+.fast-track :hover {
+  color:#555;
+}
+
+
+
+/****** Layout ******/
+
+.container {
+  display: grid;
+  column-gap: 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+  width: min(95%, 75em);
+  margin: 0 auto;
+  background-color: #fff;
+  /** border: 5px dotted red; **/
+}
+
+.container > * {
+  grid-column: span 12;
+  padding-inline: 20px;
+}
+
+.travel-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #111;
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem;
+}
+
+/* Button styles */
+
+a.button {
+  display: block;
+  min-width: 200px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px;
+  
+  /* transition: background-color 2s ease; */
+  transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+}
+
+a.button:hover {
+  transform: translateY(-2px);
+  background-color: rgb(100, 180, 250);
+  box-shadow: 0px 10px 28px -10px rgba(0, 0, 0, 0.56);
+}
+
+a.button:active {
+  background-color: rgb(10, 110, 210);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin: .5rem 3.5rem;
+  border-top: #666 solid thin;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul a {
+  display: block;
+  padding: 0 .5rem;
+}
+footer ul a:link, footer ul a:visited {
+  color: #666
+}
+footer ul a:hover{
+  color:#333
+}
+
+.experience {
+  font-size: 40px;
+  color: black;
+  margin-top: 35px;
+  margin-left: 660px;
+  margin-bottom: 0;
+}
+
+.my-work {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 660px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 90px;
+  /** border: 5px dotted maroon; **/
+}
+
+.see-more {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1200px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.see-more a :hover {
+  color: #555
+}
+
+.image-wrapper {
+  position: relative;
+  width: 800px; 
+  height: auto;
+  border: 5px purple;
+}
+
+.bottom-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.corn-field {
+  position: relative;
+}
+
+.corn-field img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  /** border: 5px dotted blue; **/
+}
+
+.p-email {
+  position: absolute;
+  top: 515px;
+  margin-left: 1000px;
+  padding: 0px;
+  /** border: 5px dotted yellow; **/
+}
+
+.linkedin-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 117px;
+  padding: 0px;
+  /** border: 5px dotted yellow; **/
+}
+
+.email-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 355px;
+  padding: 0px;
+  /** border: 5px dotted red; **/
+}
+
+.instagram-logo img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 365px;
+  margin-left: 515px;
+  padding: 0px;
+  /** border: 5px dotted purple; **/
+}
+
+.copyright {
+position: absolute;
+margin-top: 970px;
+margin-left: 675px;
+color: #fff;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.card {
+  padding: 5px;
+}
+
+.big-card {
+  max-width: 960px;
+}
+
+/* Desktop Layout */
+
+@media (min-width: 40em) {
+  #nav-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #toggle-button {
+    display: none;
+  }  
+  a.button {
+    display: inline-block;
+  }
+  .col-span-6 {
+    grid-column: span 6;
+  }
+  .col-span-4 {
+    grid-column: span 4;
+  }
+
+  .work-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    flex: 0 1 324px;
+  }
+}
